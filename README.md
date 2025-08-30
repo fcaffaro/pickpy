@@ -25,7 +25,7 @@ match choice:
         print("Exiting...")
 ```
 
-![Demo pickpy](images/pickpy_colors.gif)
+![Demo pickpy](images/pickpy.gif)
 
 ---
 
