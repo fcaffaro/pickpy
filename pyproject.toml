@@ -1,0 +1,51 @@
+[build-system]
+requires = [
+  "setuptools>=68",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pickpy"
+version = "0.1.1"
+description = "Lightweight terminal menu library with TTY fallback and safe output"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+authors = [{ name = "pickpy authors" }]
+license = { file = "LICENSE" }
+keywords = ["terminal", "menu", "tty", "console", "ansi"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Utilities",
+  "Topic :: Terminals",
+  "Topic :: Menu",
+  "Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/pickpy"
+Source = "https://github.com/yourname/pickpy"
+Issues = "https://github.com/yourname/pickpy/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pickpy*"]
+
+[project.scripts]
+pickpy-demo = "pickpy.main:main"
